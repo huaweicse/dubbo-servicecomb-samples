@@ -37,6 +37,7 @@
 
   <modules>
     <module>dubbo-provider-consumer-sample</module>
+    <module>dubbo-provider-consumer-sample-spring-boot</module>
   </modules>
 
   <licenses>
