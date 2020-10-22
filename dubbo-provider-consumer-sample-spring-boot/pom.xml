@@ -24,6 +24,7 @@
     <module>order-consumer</module>
     <module>portal-consumer</module>
     <module>spring-cloud-gateway</module>
+    <module>struts-website</module>
   </modules>
 
   <build>
