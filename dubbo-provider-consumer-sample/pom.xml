@@ -12,8 +12,19 @@
   <artifactId>dubbo-provider-consumer-sample</artifactId>
   <packaging>pom</packaging>
 
+  <properties>
+    <dubbo.version>2.7.3</dubbo.version>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.apache.dubbo</groupId>
+        <artifactId>dubbo-bom</artifactId>
+        <version>${dubbo.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>com.huaweicloud.dubbo-servicecomb</groupId>
         <artifactId>dubbo-servicecomb-dependencies</artifactId>
