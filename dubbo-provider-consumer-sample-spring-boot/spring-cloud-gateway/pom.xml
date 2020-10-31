@@ -31,7 +31,8 @@
   <properties>
     <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
     <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
-    <spring-cloud-huawei.version>1.3.5</spring-cloud-huawei.version>
+<!--    <spring-cloud-huawei.version>1.3.7-Greenwich</spring-cloud-huawei.version>-->
+    <spring-cloud-huawei.version>1.2.0-Finchley</spring-cloud-huawei.version>
     <servicecomb.version>2.0.2</servicecomb.version>
     <main.class>org.apache.servicecomb.samples.porter.gateway.SpringCloudGatewayMain</main.class>
   </properties>

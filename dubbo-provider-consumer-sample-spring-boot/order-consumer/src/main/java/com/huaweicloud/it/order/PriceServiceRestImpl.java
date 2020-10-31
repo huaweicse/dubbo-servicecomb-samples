@@ -17,6 +17,13 @@
 
 package com.huaweicloud.it.order;
 
+import com.huaweicloud.it.price.PriceService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.util.concurrent.CompletableFuture;
 
 import javax.ws.rs.GET;
@@ -25,21 +32,19 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
-import com.huaweicloud.it.price.PriceService;
-
-@Path("/price")
+// @Path("/price")
+@RequestMapping("/price")
+@RestController
 public class PriceServiceRestImpl implements PriceService {
   @Autowired
-  @Qualifier("priceService")
+  // @Qualifier("priceService")
   private PriceService priceService;
 
   @Override
-  @GET
-  @Path("/sayHello")
-  @Produces({MediaType.APPLICATION_JSON})
+  // @GET
+  // @Path("/sayHello")
+  // @Produces({MediaType.APPLICATION_JSON})
+  @GetMapping("/sayHello")
   public String sayHello(@QueryParam("name") String name) {
     return priceService.sayHello(name);
   }

@@ -17,26 +17,21 @@
 
 package com.huaweicloud.it.order;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
-
-import com.huaweicloud.it.price.PingService;
-import com.huaweicloud.it.price.PriceService;
 
 @SpringBootApplication
 @ImportResource({"classpath*:spring/dubbo-provider.xml", "classpath*:spring/dubbo-servicecomb.xml"})
 @Component
 public class OrderApplication {
-  private static ApplicationContext context;
+  // private static ApplicationContext context;
 
-  @Autowired
+  /*@Autowired
   public void setApplicationContext(ApplicationContext context) {
     OrderApplication.context = context;
-  }
+  }*/
 
   public static void main(String[] args) throws Exception {
     try {
@@ -45,7 +40,7 @@ public class OrderApplication {
       e.printStackTrace();
     }
 
-    PriceService priceService = context.getBean("priceService", PriceService.class);
+    /*PriceService priceService = context.getBean("priceService", PriceService.class);
     PingService pingService = context.getBean("pingService", PingService.class);
 
     while (true) {
@@ -57,6 +52,6 @@ public class OrderApplication {
       } catch (Exception e) {
         System.out.println(e.getMessage());
       }
-    }
+    }*/
   }
 }
