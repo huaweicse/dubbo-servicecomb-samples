@@ -38,7 +38,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>org.apache.dubbo</groupId>
         <artifactId>dubbo-bom</artifactId>
@@ -54,13 +60,7 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
+
       <dependency>
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
@@ -135,6 +135,11 @@
     <dependency>
       <groupId>com.huaweicloud.dubbo-servicecomb</groupId>
       <artifactId>dubbo-servicecomb-config-center</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.huaweicloud.dubbo-servicecomb</groupId>
+      <artifactId>dubbo-servicecomb-spring-boot</artifactId>
+      <version>${dubbo-servicecomb.version}</version>
     </dependency>
   </dependencies>
 
