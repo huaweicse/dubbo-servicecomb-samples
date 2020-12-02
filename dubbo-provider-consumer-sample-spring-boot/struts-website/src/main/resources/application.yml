@@ -14,7 +14,18 @@ spring:
     servicecomb:
       discovery:
         enabled: true
-        address: http://127.0.0.1:30100
+        address: https://cse.cn-south-1.myhuaweicloud.com
         appName: discovery
         serviceName: structs-website
         version: 0.0.1
+        watch: false
+      config:
+        serverAddr: https://cse.cn-south-1.myhuaweicloud.com
+        watch:
+          delay: 10000
+      credentials:
+        enabled: true
+        accessKey: your access key
+        secretKey: your secret key
+        akskCustomCipher: default
+        project: cn-south-1

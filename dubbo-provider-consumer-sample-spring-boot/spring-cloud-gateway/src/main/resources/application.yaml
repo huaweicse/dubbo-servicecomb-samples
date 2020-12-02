@@ -13,9 +13,19 @@ spring:
 
     servicecomb:
       discovery:
-        appName: discovery
-        serviceName: ${spring.application.name}
         enabled: true
-        address: http://127.0.0.1:30100
+        address: https://cse.cn-south-1.myhuaweicloud.com
+        appName: discovery
+        serviceName: spring-cloud-gateway-service
         version: 0.0.1
-        healthCheckInterval: 30
+        watch: false
+      config:
+        serverAddr: https://cse.cn-south-1.myhuaweicloud.com
+        watch:
+          delay: 10000
+      credentials:
+        enabled: true
+        accessKey: your access key
+        secretKey: your secret key
+        akskCustomCipher: default
+        project: cn-south-1
