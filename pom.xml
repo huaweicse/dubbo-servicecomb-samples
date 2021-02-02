@@ -36,6 +36,7 @@
   <name>Dubbo ServiceComb Samples</name>
 
   <modules>
+    <module>basic</module>
     <module>dubbo-provider-consumer-sample</module>
     <module>dubbo-provider-consumer-sample-spring-boot</module>
   </modules>

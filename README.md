@@ -1,6 +1,5 @@
-[Dubbo-ServiceComb](https://github.com/huaweicloud/dubbo-servicecomb) 的示例。
+# Dubbo ServiceComb Samples [中文](README_CN.md) 
 
-* dubbo-provider-consumer-sample 一个简单的例子，演示服务发现、动态配置、服务治理等功能。 
+This project provide samples for Dubbo ServiceComb. Read each sub-project for details about each sample.
 
-详细参考每个子项目下面的介绍。
 
