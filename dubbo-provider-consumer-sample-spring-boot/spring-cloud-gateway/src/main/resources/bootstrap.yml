@@ -1,6 +1,3 @@
-server:
-  port: 9090
-
 spring:
   application:
     name: spring-cloud-gateway-service
@@ -16,7 +13,7 @@ spring:
         enabled: true
         # address: https://cse.cn-south-1.myhuaweicloud.com
         address: http://127.0.0.1:30100
-        appName: basic-application
+        appName: discovery
         serviceName: spring-cloud-gateway-service
         version: 0.0.1
         watch: false

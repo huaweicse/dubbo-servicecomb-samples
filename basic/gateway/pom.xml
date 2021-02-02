@@ -29,8 +29,6 @@
   <packaging>jar</packaging>
 
   <properties>
-    <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
-    <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
   </properties>
 
   <dependencyManagement>

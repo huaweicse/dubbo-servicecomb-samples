@@ -1,23 +1,20 @@
-server:
-  port: 9090
+## 后台服务的域名， 配置为网关的域名
+backend:
+  server: http://spring-cloud-gateway-service # 发现场景
+  #  server: http://6cp0b5ata6xutdud.kouzhe.cn-north-4.huaweicse.com # CDN 场景
+  enableDiscovery: true
 
 spring:
   application:
-    name: spring-cloud-gateway-service
+    name: structs-website
   cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
-
     servicecomb:
       discovery:
         enabled: true
         # address: https://cse.cn-south-1.myhuaweicloud.com
         address: http://127.0.0.1:30100
-        appName: basic-application
-        serviceName: spring-cloud-gateway-service
+        appName: discovery
+        serviceName: structs-website
         version: 0.0.1
         watch: false
       config:

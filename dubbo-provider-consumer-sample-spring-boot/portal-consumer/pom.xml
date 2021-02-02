@@ -38,20 +38,6 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-framework-bom</artifactId>
-        <version>${spring.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.huaweicloud.dubbo-servicecomb</groupId>
-        <artifactId>dubbo-servicecomb-dependencies</artifactId>
-        <version>${dubbo-servicecomb.version}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring-boot.version}</version>
@@ -97,7 +83,7 @@
     </dependency>
     <dependency>
       <groupId>com.huaweicloud</groupId>
-      <artifactId>spring-cloud-starter-huawei-servicecomb-discovery</artifactId>
+      <artifactId>spring-cloud-starter-huawei-service-engine</artifactId>
     </dependency>
   </dependencies>
 

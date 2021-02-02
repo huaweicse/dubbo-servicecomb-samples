@@ -1,23 +1,14 @@
-server:
-  port: 9090
-
 spring:
   application:
-    name: spring-cloud-gateway-service
+    name: portal-consumer
   cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
-
     servicecomb:
       discovery:
         enabled: true
         # address: https://cse.cn-south-1.myhuaweicloud.com
         address: http://127.0.0.1:30100
-        appName: basic-application
-        serviceName: spring-cloud-gateway-service
+        appName: discovery
+        serviceName: portal-consumer
         version: 0.0.1
         watch: false
       config:

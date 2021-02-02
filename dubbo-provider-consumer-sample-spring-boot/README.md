@@ -31,5 +31,6 @@
   
  
 5. 通过控制台，可以看到各个服务的注册信息和实例信息。可以通过 gateway 调用各个接口， 可以访问 struts 应用
-  的 hello.action。
+  的 hello.action。 例如： http://localhost:9090/structs-website/hello.action
+
   
