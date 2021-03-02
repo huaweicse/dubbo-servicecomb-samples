@@ -32,6 +32,7 @@ public class ConsumerServiceImpl implements ConsumerService {
   @Qualifier("providerService")
   private ProviderService providerService;
 
+  // consumer service which delegate the implementation to provider service.
   @Override
   @GET
   @Path("/sayHello")

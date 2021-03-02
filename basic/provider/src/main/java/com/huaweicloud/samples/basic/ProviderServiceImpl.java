@@ -18,6 +18,7 @@
 package com.huaweicloud.samples.basic;
 
 public class ProviderServiceImpl implements ProviderService {
+  // a very simple service to echo the request parameter
   @Override
   public String sayHello(String name) {
     return "Hello " + name;
